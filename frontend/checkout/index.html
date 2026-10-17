@@ -1,0 +1,169 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8ff">
+  <title>Giỏ hàng &amp; Thanh toán | MiniShop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <p>
+        <span>Hotline: 1800 6868 (Miễn phí)</span>
+        <span aria-hidden="true"> · </span>
+        <span>Giao hàng nhanh 2h toàn quốc</span>
+        <span aria-hidden="true"> · </span>
+        <span>Hệ thống 120 cửa hàng</span>
+        <a href="#account">Đăng nhập / Đăng ký</a>
+      </p>
+    </div>
+    <div>
+      <a href="../home/index.html" aria-label="MiniShop trang chủ"><strong>MiniShop</strong></a>
+      <form action="#" role="search">
+        <label for="category">Danh mục</label>
+        <select id="category" name="category"><option>Tất cả danh mục</option></select>
+        <label for="search">Tìm kiếm sản phẩm</label>
+        <input id="search" name="search" type="search" placeholder="Tìm kiếm sản phẩm, thương hiệu, danh mục...">
+        <button type="submit" aria-label="Tìm kiếm">⌕</button>
+      </form>
+      <a href="tel:18006868">Tư vấn mua hàng: 1800 6868</a>
+      <a href="#cart">Giỏ hàng (3)</a>
+      <a id="account" href="#account">Xin chào, Nam</a>
+    </div>
+    <nav aria-label="Điều hướng chính">
+      <a href="#categories">☰ Danh mục sản phẩm</a>
+      <a href="../home/index.html">Trang chủ</a>
+      <a href="#categories">Cà phê &amp; Đồ uống</a>
+      <a href="#categories">Đồ gia dụng</a>
+      <a href="#categories">Trang trí nhà cửa</a>
+      <a href="#categories">Phụ kiện</a>
+      <a href="#categories">Cây cảnh</a>
+      <a href="#categories">Văn phòng phẩm</a>
+      <a href="#deals">Flash Sale 🔥</a>
+      <a href="#deals">Khuyến mãi hot</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="Đường dẫn">
+      <a href="../home/index.html">⌂ Trang chủ</a> / <strong>Giỏ hàng &amp; Thanh toán</strong>
+    </nav>
+
+    <div>
+      <section id="cart" aria-labelledby="cart-title">
+        <h1 id="cart-title"><i class="fa-solid fa-cart-shopping title-icon" aria-hidden="true"></i> Giỏ hàng của bạn <span>(3 sản phẩm)</span></h1>
+        <button type="button"><i class="fa-regular fa-trash-can" aria-hidden="true"></i> Xóa tất cả</button>
+        <table>
+          <thead>
+            <tr><th scope="col">Sản phẩm</th><th scope="col">Đơn giá</th><th scope="col">Số lượng</th><th scope="col">Thành tiền</th><th scope="col">Thao tác</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="../asset/picture/photo-1442512595331-e89e73853f31.jpg" alt="Cà phê Robusta Cầu Đất 500g" width="80" height="80">
+                <strong>Cà Phê Robusta Cầu Đất 500g</strong><br>
+                <small>Mã: CF-500-R</small><br><span class="product-note"><i class="fa-solid fa-bolt" aria-hidden="true"></i> Giao nhanh 2h</span>
+              </td>
+              <td><strong>89.000₫</strong><br><del>110.000₫</del></td>
+              <td><button type="button" aria-label="Giảm số lượng cà phê">−</button> <input aria-label="Số lượng cà phê" type="number" min="1" value="2"> <button type="button" aria-label="Tăng số lượng cà phê">+</button></td>
+              <td><strong>178.000₫</strong></td><td><button type="button" aria-label="Xóa cà phê"><i class="fa-regular fa-trash-can" aria-hidden="true"></i></button></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="../asset/picture/photo-1556911220-e15b29be8c8f.jpg" alt="Nồi cơm điện mini đa năng 1.2L Bear" width="80" height="80">
+                <strong>Nồi Cơm Điện Mini Đa Năng 1.2L Bear</strong><br>
+                <small>Màu: Kem thanh lịch</small><br><span class="product-note"><i class="fa-solid fa-certificate" aria-hidden="true"></i> Chính hãng 100%</span>
+              </td>
+              <td><strong>329.000₫</strong><br><del>450.000₫</del></td>
+              <td><button type="button" aria-label="Giảm số lượng nồi cơm">−</button> <input aria-label="Số lượng nồi cơm" type="number" min="1" value="1"> <button type="button" aria-label="Tăng số lượng nồi cơm">+</button></td>
+              <td><strong>329.000₫</strong></td><td><button type="button" aria-label="Xóa nồi cơm"><i class="fa-regular fa-trash-can" aria-hidden="true"></i></button></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="../asset/picture/photo-1602143407151-7111542de6e8.jpg" alt="Bình giữ nhiệt inox 316 800ml" width="80" height="80">
+                <strong>Bình Giữ Nhiệt Inox 316 800ml</strong><br>
+                <small>Dung tích: 800ml - Đen</small><br><span class="product-note best-seller"><i class="fa-solid fa-fire" aria-hidden="true"></i> Bán chạy</span>
+              </td>
+              <td><strong>159.000₫</strong><br><del>199.000₫</del></td>
+              <td><button type="button" aria-label="Giảm số lượng bình giữ nhiệt">−</button> <input aria-label="Số lượng bình giữ nhiệt" type="number" min="1" value="1"> <button type="button" aria-label="Tăng số lượng bình giữ nhiệt">+</button></td>
+              <td><strong>159.000₫</strong></td><td><button type="button" aria-label="Xóa bình giữ nhiệt"><i class="fa-regular fa-trash-can" aria-hidden="true"></i></button></td>
+            </tr>
+          </tbody>
+        </table>
+        <p><a href="../home/index.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Tiếp tục mua hàng</a> <span><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Đổi trả miễn phí trong vòng 30 ngày</span></p>
+      </section>
+
+      <section aria-labelledby="shipping-title">
+        <h2 id="shipping-title"><i class="fa-solid fa-truck-fast title-icon" aria-hidden="true"></i> Thông tin giao hàng</h2>
+        <p>Vui lòng điền địa chỉ để nhận hàng nhanh nhất <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Chuẩn hóa địa chỉ VN</span></p>
+        <form action="#" method="post">
+          <p class="icon-field"><label for="full-name">Họ và tên người nhận <abbr title="bắt buộc">*</abbr></label><span class="input-wrap"><i class="fa-regular fa-user" aria-hidden="true"></i><input id="full-name" name="full-name" autocomplete="name" value="Nguyễn Văn Nam" required></span></p>
+          <p class="icon-field"><label for="phone">Số điện thoại liên hệ <abbr title="bắt buộc">*</abbr></label><span class="input-wrap"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i><input id="phone" name="phone" type="tel" autocomplete="tel" value="0901 234 567" required></span></p>
+          <p class="icon-field"><label for="city">Tỉnh / Thành phố <abbr title="bắt buộc">*</abbr></label><span class="input-wrap select-wrap"><select id="city" name="city" required><option>TP. Hồ Chí Minh</option></select><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span></p>
+          <p class="icon-field"><label for="district">Quận / Huyện <abbr title="bắt buộc">*</abbr></label><span class="input-wrap select-wrap"><select id="district" name="district" required><option>Quận 1</option></select><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span></p>
+          <p class="icon-field full-field"><label for="address">Địa chỉ giao hàng chi tiết <abbr title="bắt buộc">*</abbr></label><span class="input-wrap"><i class="fa-regular fa-map" aria-hidden="true"></i><input id="address" name="address" autocomplete="street-address" value="Số 123 đường Lê Lợi, Phường Bến Nghé, Quận 1" required></span></p>
+          <p class="note-field full-field"><label for="note">Ghi chú đơn hàng (Tùy chọn)</label> <small>Tối đa 150 ký tự</small><span class="input-wrap"><i class="fa-regular fa-message" aria-hidden="true"></i><textarea id="note" name="note" maxlength="150" rows="3">Giao trong giờ hành chính, gọi trước 15 phút</textarea></span></p>
+          <fieldset>
+            <legend>Hình thức thanh toán</legend>
+            <label class="payment-option"><input type="radio" name="payment" value="cod" checked><span class="payment-copy"><strong>Thanh toán tiền mặt khi nhận hàng (COD) <em>An toàn 100%</em></strong><small>Kiểm tra sản phẩm trước khi thanh toán cho nhân viên giao vận</small></span><i class="fa-solid fa-money-check-dollar payment-icon" aria-hidden="true"></i></label>
+            <label class="payment-option"><input type="radio" name="payment" value="vietqr"><span class="payment-copy"><strong>Chuyển khoản ngân hàng qua mã VietQR <em>Tự động 24/7</em></strong><small>Quét mã QR từ mọi ứng dụng ngân hàng và ví điện tử, xử lý ngay lập tức</small></span><i class="fa-solid fa-qrcode payment-icon qr-icon" aria-hidden="true"></i></label>
+          </fieldset>
+        </form>
+      </section>
+
+      <aside aria-labelledby="summary-title">
+        <h2 id="summary-title"><span><i class="fa-solid fa-receipt title-icon" aria-hidden="true"></i> Tóm tắt đơn hàng</span> <span>3 món</span></h2>
+        <section aria-labelledby="voucher-title">
+          <h3 id="voucher-title"><i class="fa-solid fa-tag" aria-hidden="true"></i> Mã giảm giá MiniShop</h3>
+          <a href="#vouchers">Xem tất cả (2)</a>
+          <form action="#" method="post">
+            <label for="voucher">Mã giảm giá</label>
+            <input id="voucher" name="voucher" value="MINISHOP2025">
+            <button type="submit">Áp dụng</button>
+          </form>
+          <p><span><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Đã áp dụng mã: <strong>MINISHOP2025</strong></span> <strong>-30.000₫</strong></p>
+        </section>
+        <dl>
+          <dt>Tạm tính:</dt><dd>666.000₫</dd>
+          <dt>Phí vận chuyển:</dt><dd><del>25.000₫</del> 0₫</dd>
+          <dt>Giảm giá Voucher:</dt><dd>-30.000₫</dd>
+        </dl>
+        <div class="shipping-progress" role="status" aria-label="Đơn hàng đã đạt điều kiện miễn phí vận chuyển">
+          <div class="shipping-progress-copy"><span><i class="fa-solid fa-truck-fast" aria-hidden="true"></i> Đơn hàng đủ điều kiện FREESHIP!</span><strong>Tiết kiệm 25.000₫</strong></div>
+          <div class="progress-track" role="progressbar" aria-label="Tiến trình miễn phí vận chuyển" aria-valuemin="0" aria-valuemax="500000" aria-valuenow="666000"><span></span></div>
+        </div>
+        <p><strong>Tổng thanh toán:</strong> <strong>636.000₫</strong><br><small>(Đã bao gồm thuế VAT)</small> <small>Tích 636 điểm thưởng</small></p>
+        <button type="button"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> ĐẶT HÀNG NGAY (COD)</button>
+        <ul>
+          <li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Cam kết thông tin thanh toán bảo mật 100%</li>
+          <li><i class="fa-solid fa-phone-volume" aria-hidden="true"></i> Hotline hỗ trợ tức thì: <strong>1800 6868</strong> (Miễn phí)</li>
+          <li><i class="fa-solid fa-rotate" aria-hidden="true"></i> Kiểm tra hàng thoải mái trước khi thanh toán</li>
+        </ul>
+        <section aria-labelledby="delivery-title">
+          <h3 id="delivery-title"><i class="fa-regular fa-clock" aria-hidden="true"></i> Dự kiến nhận hàng</h3>
+          <p>Hôm nay, trước 18:00 (Nội thành TP.HCM)</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <section><h2>Về MiniShop</h2><a href="#about">Giới thiệu công ty</a><a href="#stores">Hệ thống siêu thị</a><a href="#careers">Tuyển dụng</a><a href="#license">Giấy phép ĐKKD</a></section>
+      <section><h2>Hỗ trợ khách hàng</h2><a href="#returns">Chính sách đổi trả 30 ngày</a><a href="#guide">Hướng dẫn mua hàng</a><a href="#shipping">Chính sách giao hàng</a><a href="#orders">Tra cứu đơn hàng</a></section>
+      <section><h2>Tổng đài hỗ trợ</h2><p><strong>Mua hàng:</strong> 1800 6868 (8:00 - 21:30)</p><p><strong>Khiếu nại:</strong> 1800 6869 (8:00 - 21:00)</p><p><strong>Email:</strong> cskh@minishop.vn</p></section>
+      <section><h2>Phương thức thanh toán</h2><p><span>COD</span> <span>Chuyển khoản</span> <span>ATM / Visa</span></p><p>Đã thông báo Bộ Công Thương</p></section>
+    </div>
+    <p>© 2025 MiniShop - Chuỗi siêu thị bán lẻ tiện lợi. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
